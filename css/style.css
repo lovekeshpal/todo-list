@@ -8,7 +8,7 @@
 
 .container {
   background-color: #f4f1de;
-  height: 100vh;
+  height: auto;
   width: 100%;
 }
 header {
@@ -27,11 +27,6 @@ header {
   align-items: center;
   margin: auto;
   width: 800px;
-}
-
-.input-box-container {
-  display: grid;
-  grid-template-columns: 10fr 2fr;
 }
 
 .task-input {
@@ -59,6 +54,30 @@ textarea {
   font-size: 20px;
   padding: 20px;
 }
+.add-task-action {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.date-and-add-btn-container {
+  width: 800px;
+  display: grid;
+  grid-template-columns: 10fr 2fr;
+}
+
+.date {
+  font-size: 20px;
+}
+
+.task-list-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .task-list {
   width: 100%;
   height: auto;
@@ -70,7 +89,7 @@ textarea {
 .task {
   height: 200px;
   width: 800px;
-  border: 1px solid black;
+  border: 1px solid gray;
   background-color: #fff;
 }
 
@@ -82,10 +101,11 @@ textarea {
 }
 
 .task-name {
-  border: 1px solid red;
+  /* border: 1px solid red; */
+  border-bottom: 1px solid gray;
 }
 .edit-btn {
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 .task-desc-and-delete {
   width: 100%;
@@ -94,10 +114,10 @@ textarea {
   grid-template-columns: 10fr 2fr;
 }
 .task-desc {
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 .delete-btn {
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .task-name > h1 {
