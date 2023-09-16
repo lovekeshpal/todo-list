@@ -136,3 +136,20 @@ textarea {
   width: 100%;
   font-size: 20px;
 }
+
+/* For Highlighting the Errors */
+.task-name-error-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#taskNameError {
+  width: 800px;
+}
+.input-error {
+  border: 3px solid red;
+}
+.error-font {
+  margin-top: 5px;
+  color: red;
+}

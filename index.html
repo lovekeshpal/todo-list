@@ -12,8 +12,17 @@
         <h1 class="heading">To Do List</h1>
       </header>
       <div class="add-task">
-        <input class="task-input" type="text" placeholder="Enter Task name" />
+        <input
+          id="taskName"
+          class="task-input"
+          type="text"
+          placeholder="Enter Task name"
+        />
       </div>
+      <div class="task-name-error-container">
+        <div id="taskNameError"></div>
+      </div>
+
       <div class="description-box-container">
         <textarea
           id=""
@@ -25,7 +34,9 @@
       <div class="add-task-action">
         <div class="date-and-add-btn-container">
           <input class="date" type="datetime-local" />
-          <button class="add-task-btn">Add Task</button>
+          <button id="addTaskBtn" onclick="addTask()" class="add-task-btn">
+            Add Task
+          </button>
         </div>
       </div>
       <div class="task-list-heading">
