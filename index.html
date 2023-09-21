@@ -7,10 +7,71 @@
     <title>To-Do List</title>
   </head>
   <body>
-    <h1>To-Do List</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi vero unde est at perspiciatis? 
-      Nihil quo laboriosam sint provident
-       asperiores, corrupti nisi quasi nobis minima dolor. Odit consequatur facere debitis.</p>
+    <div class="container">
+      <header>
+        <h1 class="heading">To Do List</h1>
+      </header>
+      <div class="add-task">
+        <input
+          id="taskName"
+          class="task-input"
+          type="text"
+          placeholder="Enter Task name"
+        />
+      </div>
+      <div class="task-name-error-container">
+        <div id="taskNameError"></div>
+      </div>
+
+      <div class="description-box-container">
+        <textarea
+          id="taskDescription"
+          cols="30"
+          rows="10"
+          placeholder="Put task description here..."
+        ></textarea>
+      </div>
+
+      <div class="task-description-error-container">
+        <div id="taskDescriptionError"></div>
+      </div>
+
+      <div class="add-task-action">
+        <div class="date-and-add-btn-container">
+          <input class="date" type="datetime-local" />
+          <button id="addTaskBtn" onclick="addTask()" class="add-task-btn">
+            Add Task
+          </button>
+        </div>
+      </div>
+      <div class="task-list-heading">
+        <h1 class="heading">Task List</h1>
+      </div>
+
+      <div class="task-list">
+        <div class="task">
+          <div class="task-name-and-edit">
+            <div class="task-name">
+              <h1>Study CSS</h1>
+            </div>
+            <div class="edit-btn">
+              <button class="edit-task-btn">Edit Task</button>
+            </div>
+          </div>
+          <div class="task-desc-and-delete">
+            <div class="task-desc">
+              <p style="font-size: 20px; padding: 20px">
+                This is my task description
+              </p>
+            </div>
+            <div class="delete-btn">
+              <button class="delete-task-btn">Delete Task</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="./js/main.js"></script>
   </body>
 </html>
